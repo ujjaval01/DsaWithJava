@@ -7,8 +7,11 @@ import java.util.Collections;
 
 public class Q735AsteroidCollision {
     public static void main(String[] args) {
-        int[] arr = {3,5,-6,2,1,4};
-        System.out.println(asteroidCollision(arr));
+//        int[] arr = {3,5,-6,2,1,4};
+//        System.out.println(asteroidCollision(arr));
+        while (true){
+            System.out.println(".");
+        }
 
     }
     public static ArrayList<Integer> asteroidCollision(int[] arr) {
