@@ -1,0 +1,47 @@
+import java.util.Stack;
+
+public class MinStackLeetcode{
+    public static void main(String[] args) {
+        MinStack minStack = new MinStack();
+        minStack.push(-2);
+        minStack.push(0);
+        minStack.push(-3);
+        System.out.println(minStack.getMin()); // return -3
+        minStack.pop();
+        System.out.println(minStack.top());    // return 0
+        System.out.println(minStack.getMin()); // return -2
+
+        
+    }
+}
+
+
+    class MinStack {
+    Stack<Integer> st1;
+    Stack<Integer> st2;
+    public MinStack() {
+        st1 = new Stack<>();
+        st2 = new Stack<>();
+    }
+    public void push(int val) {
+       st1.push(val);
+       if(st2.isEmpty() || val <= st2.peek()){
+        st2.push(val);
+       }
+    }
+    
+    public void pop() {
+        if(st1.isEmpty()) return;
+
+        int delt = st1.pop();
+        if(delt == st2.peek()) st2.pop();
+    }
+    public int top() {
+        return st1.peek();
+    }
+    
+    public int getMin() {
+        return st2.peek();
+    }
+}
+
