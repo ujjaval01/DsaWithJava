@@ -3,7 +3,7 @@ package LeetCodeQuestions;
 public class Q392IsSubsequence {
     public static void main(String[] args) {
         String s = "abc";
-        String t = "bnaxbredf";
+        String t = "bnaxbredcf";
         System.out.println(isSubsequence(s, t));
     }
     public static boolean isSubsequence(String s, String t) {
