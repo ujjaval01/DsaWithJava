@@ -3,10 +3,18 @@ package SortBubble;
 In every case T.C - O(n*n)
 */
 public class simpleSorting {
-    static void main() {
+    public static void main(String[] args) {
         int[] arr = {60,20,50,40,30,10};
-        for(int i = 0; i < arr.length-1; i++){
-            for(int j = 0; j < arr.length-1; j++){
+        sort(arr);
+        for(int e:arr){
+            System.out.print(e + " ");
+        }
+    }
+
+    public static int[] sort(int[] arr){
+        int n = arr.length;
+        for(int i = 0; i< n; i++){
+            for(int j = 0; j<n-1-i; j++){
                 if(arr[j] > arr[j+1]){
                     int temp = arr[j];
                     arr[j] = arr[j+1];
@@ -14,10 +22,7 @@ public class simpleSorting {
                 }
             }
         }
-        for(int e:arr){
-            System.out.print(e + " ");
-        }
-
+        return arr;
     }
 }
 /*
