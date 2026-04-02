@@ -1,7 +1,7 @@
 package SortBubble;
 
 public class ReverseSorting {
-    static void main() {
+    public static void main(String[] args) {
         int[] arr = {1,2,5,3,4};
         int n = arr.length;
         sortArray(arr,n);
