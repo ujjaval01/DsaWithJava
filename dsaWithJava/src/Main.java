@@ -1,7 +1,9 @@
 public class Main{
-    static void main() {
-        int a = 9;
-        int b = 10;
-        System.out.println(a/b);
+    public static void main(String[] args) {
+        System.out.println("hello");
+
+        int p = 67, t = 2, r = 5;
+        double si = p*t*r/100d;
+        System.out.println(si);
     }
 }
