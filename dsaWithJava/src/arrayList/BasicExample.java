@@ -10,8 +10,8 @@ public class BasicExample {
         arr.add(5);
         arr.add(8);
         arr.remove(1);
-        for (int arrOutput: arr){
-            System.out.println(arrOutput);
+        for (int al: arr){
+            System.out.println(al);
         }
     }
 }
