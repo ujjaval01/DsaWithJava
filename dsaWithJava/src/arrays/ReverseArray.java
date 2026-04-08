@@ -1,7 +1,7 @@
 package arrays;
 
 public class ReverseArray {
-    static void main() {
+    public static void main(String[] args) {
         int[] arr = {10,52,7,5,77,3,65,52,48,96};
         int i = 0;
         int j = arr.length-1;
