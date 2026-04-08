@@ -1,11 +1,11 @@
 package arrayList;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Vector;
 
 public class addingOne {
-    static void main() {
-        // 4599
+    public static void main(String[] args) {
         int[] arr = {4,5,6,7,8,9};
         Solution s = new Solution();
 
@@ -31,5 +31,7 @@ class Solution{
         Collections.reverse(ans);
 
         return ans;
+
+
     }
 }
