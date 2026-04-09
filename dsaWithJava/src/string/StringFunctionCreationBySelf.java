@@ -5,7 +5,13 @@ public class StringFunctionCreationBySelf {
         String a = "Ujjcval";
         String b = "Ujjaval";
         System.out.println(compairTo(a,b));
+    }
 
+
+    public static String modify(String s) {
+        int a = (int)s.charAt(0);
+        if(a >= 97) return s.toLowerCase();
+        return s.toUpperCase();
     }
 
     public static int compairTo(String a, String b){
