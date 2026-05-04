@@ -1,12 +1,15 @@
 package string;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class AnagramCheck {
   public static void main(String[] args) {
-    String str1 = "silent";
-    String str2 = "listen";
+    String str1 = "s i l  ent";
+    String str2 = "li s tEn";
+
+//      System.out.println(str1);
+//      str1 = str1.replaceAll("\\s", "").toLowerCase();
+//      System.out.println(str1);
 
     if(isAnagram(str1, str2)){
         System.out.println("the string is anagram");
