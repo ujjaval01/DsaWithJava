@@ -15,5 +15,6 @@ public class CountingUppercaseLowercase {
         }
         System.out.println("uppercase: " + uppercase);
         System.out.println("lowercase: " + lowercase);
+
     }
 }
