@@ -13,7 +13,13 @@ Explanation:In lexicographical order, s will be eeeefggkkorss.
 Constraints:
 1 ≤ s.size() ≤ 105
 
+ */
 class Solution {
+    public static void main(String[] args) {
+        String s = "abdes";
+        System.out.println(countSort(s));
+    }
+
     public static String countSort(String s) {
         // code here
         StringBuilder sb = new StringBuilder(s);
@@ -31,9 +37,4 @@ class Solution {
         String str = String.valueOf(sb);
         return str;
     }
-}
-
-*/
-
-public class gfgQuestion {
 }
