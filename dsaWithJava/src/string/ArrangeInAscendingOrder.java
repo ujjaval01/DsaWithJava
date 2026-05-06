@@ -1,37 +1,34 @@
 package string;
 
 public class ArrangeInAscendingOrder {
-    static void main() {
+    public static void main(String[] args) {
+        String s = "ebacd";
+
+        char x = s.charAt(0);
+        char y = s.charAt(1);
 
 
+        s = s.toLowerCase();
+        StringBuilder sb = new StringBuilder(s);
 
+//        int a = 'a';
+//        int b = 'b';
+//
+//        if(a <b ){
+//            System.out.println("a");
+//            System.out.println(a);
+//        }else System.out.println("b");
 
+        for(int i = 0; i<s.length(); i++){
+            for (int j = i+1; j<s.length(); j++){
+                int c = s.charAt(i);
+                int d = s.charAt(j);
 
+                if(c < d){
+                    char temp = s.charAt(i);
 
-
-
-
-
-
-
-
-
-//        String s = "ebacd";
-//        StringBuilder sb = new StringBuilder(s);
-//        StringBuilder res = new StringBuilder();
-//        for(int i = 0; i< sb.length()-1; i++) {
-//            char c = sb.charAt(i);
-//            for(int j = i+1; j< sb.length(); j++){
-//                char d = sb.charAt(j);
-//                if(c>d){
-//                    char temp = c;
-//                    c = d;
-//                    d = temp;
-//                }
-//                System.out.println(sb);
-//            }
-//            System.out.println(sb);
-//        }
-//        System.out.println(sb);
+                }
+            }
+        }
     }
 }
