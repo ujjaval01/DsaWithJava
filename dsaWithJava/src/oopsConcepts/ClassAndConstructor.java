@@ -12,20 +12,20 @@ class Car{
     public void setLen(double len){
         this.len = len;
     }
-    public int getPrice(){
-        return price;
-    }
+//    public int getPrice(){
+//        return price;
+//    }
     void print(){
         System.out.println(name+ " " + len+"m " + price);
     }
 }
 
 public class ClassAndConstructor {
-    static void main() {
+    public static void main(String[] args) {
         Car c1 = new Car("Lord Alto", 3.55, 400000);
         c1.setLen(4.4);
         c1.print();
-        System.out.println(c1.getPrice());
+//        System.out.println(c1.getPrice());
 
     }
 }
