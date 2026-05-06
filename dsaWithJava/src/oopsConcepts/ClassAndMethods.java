@@ -20,7 +20,7 @@ class Students{
 
 }
 public class ClassAndMethods {
-    static void main() {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 //        creating object of the outer class to access the data member inside the inner or main class
         Students s1 = new Students();
