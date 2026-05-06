@@ -13,7 +13,7 @@ Output: 0
 Explanation: As all the elements of array are same, so there is no inversion count.*/
 public class inversionCount {
     static int count;
-    static void main() {
+    public static void main(String[] args) {
         int[] arr = {2, 4, 1, 3, 5};
         System.out.println(inversionCount(arr));
     }
