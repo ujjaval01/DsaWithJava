@@ -5,7 +5,8 @@ public class RemoveDuplicate {
         String str = "Ujjaval".toLowerCase();
         String ans = "";
         for(int i = 0; i<str.length(); i++){
-            char ch = str.charAt(i);           
+            char ch = str.charAt(i);
+            System.out.println( ans.indexOf(ch));
             if(ans.indexOf(ch) == -1){
                 ans+=ch;
             }
